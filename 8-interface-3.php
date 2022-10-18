@@ -34,6 +34,10 @@ interface InfoShower
     public function showInfo();
 }
 
+/************************************************
+ * Implementasi interface terhadap abstract class
+ ************************************************/
+
 abstract class Geometri implements GeometriInterface, InfoShower
 {
     public function showInfo()
@@ -65,6 +69,10 @@ abstract class BangunRuang extends Geometri implements BangunRuangInterface
         echo "Luas Permukaan: " . $this->getLuasPermukaan() . "<br/>";
     }
 }
+
+/************************************************
+ * Implementasi terhadap class
+ ************************************************/
 
 class Persegi extends BangunDatar
 {
